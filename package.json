@@ -5,6 +5,7 @@
   "description": "Enforces a consistent Sass code style for our website projects ",
   "license": "UNLICENSED",
   "main": "index.js",
+  "type": "module",
   "keywords": [
     "stylelint",
     "stylelintconfig",
