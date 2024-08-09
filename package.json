@@ -1,0 +1,21 @@
+{
+  "name": "@ryze-digital/stylelint-config-website",
+  "version": "0.1.0",
+  "author": "RYZE Digital GmbH <kontakt@ryze-digital.de> (https://www.ryze-digital.de/)",
+  "description": "Enforces a consistent Sass code style for our website projects ",
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "keywords": [
+    "stylelint",
+    "stylelintconfig",
+    "lint",
+    "sass",
+    "scss"
+  ],
+  "peerDependencies": {
+    "stylelint": "^16.8.1"
+  },
+  "dependencies": {
+    "stylelint-config-standard-scss": "^13.1.0"
+  }
+}
