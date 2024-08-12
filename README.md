@@ -1,4 +1,4 @@
-# RYZE Digital Stylelint rules
+# RYZE Digital Stylelint Rules
 
 ## Install
 
