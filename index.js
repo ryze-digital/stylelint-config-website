@@ -50,6 +50,7 @@ export default {
         'scss/at-mixin-argumentless-call-parentheses': 'always',
         'value-keyword-case':  ['lower', {
             camelCaseSvgKeywords: true
-        }]
+        }],
+        'declaration-block-no-redundant-longhand-properties': null
     }
 };
