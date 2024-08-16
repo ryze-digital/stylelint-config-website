@@ -6,6 +6,7 @@
   "license": "UNLICENSED",
   "main": "index.js",
   "type": "module",
+  "repository": "github:ryze-digital/stylelint-config-website",
   "keywords": [
     "stylelint",
     "stylelintconfig",
