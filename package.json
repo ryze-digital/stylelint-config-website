@@ -3,7 +3,7 @@
   "version": "1.0.0-beta.1",
   "author": "RYZE Digital GmbH <kontakt@ryze-digital.de> (https://www.ryze-digital.de/)",
   "description": "Enforces a consistent Sass code style for our website projects ",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "main": "index.js",
   "type": "module",
   "repository": "github:ryze-digital/stylelint-config-website",
