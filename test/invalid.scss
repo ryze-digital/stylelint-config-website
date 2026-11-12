@@ -1,0 +1,183 @@
+/*
+ * Deliberately invalid file used as a regression fixture for the shipped config.
+ * Every warning Stylelint reports for this file (line, column, severity, rule)
+ * is recorded in invalid.snapshot.json. After a dependency upgrade the snapshot
+ * must still match, otherwise a rule changed its behaviour.
+ *
+ *     npm test                          compare against the snapshot
+ *     npm test -- --update              rewrite the snapshot after an intentional change
+ *     npm run lint -- test/invalid.scss print the raw Stylelint output
+ */
+
+// Custom rules of this config
+
+.important {
+    color: #ff0000 !important;
+}
+
+.short-hex {
+    color: #fff;
+}
+
+.BlockElement {
+    color: #000000;
+}
+
+.block__element {
+    color: #000000;
+}
+
+a.qualified-by-class {
+    color: #000000;
+}
+
+a#qualified-by-id {
+    color: #000000;
+}
+
+.allowed[type="text"].qualified-by-attribute {
+    color: #000000;
+}
+.missing-empty-line-before-rule {
+    color: #000000;
+}
+
+.declaration-empty-line {
+    margin: 0;
+
+    padding: 0;
+}
+
+.custom-properties {
+    --first: 1px;
+
+    --second: 2px;
+}
+
+.keyword-case {
+    display: BLOCK;
+    fill: currentColor;
+}
+
+.mixin-call {
+    @include argumentless;
+}
+
+.longhand {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.at-rule-spacing {
+    color: #000000;
+}
+@media (width >= 100px) {
+    .after-media {
+        color: #000000;
+    }
+}
+
+// Nesting depth and nested type qualifiers
+
+.depth-1 {
+    .depth-2 {
+        .depth-3 {
+            .depth-4 {
+                .depth-5 {
+                    .depth-6 {
+                        .depth-7 {
+                            color: #000000;
+                        }
+                    }
+
+                    &:hover {
+                        color: #000000;
+                    }
+
+                    @media (width >= 100px) {
+                        color: #000000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.nested-qualifier {
+    a {
+        &.is-active {
+            color: #000000;
+        }
+
+        &[href] {
+            color: #000000;
+        }
+
+        &#id {
+            color: #000000;
+        }
+    }
+}
+
+// Rules inherited from stylelint-config-standard-scss
+
+.descending-a .descending-b {
+    color: #000000;
+}
+
+.descending-b {
+    color: #000000;
+}
+
+.duplicate {
+    color: #000000;
+}
+
+.duplicate {
+    color: #000000;
+}
+
+.unknown {
+    colr: #000000;
+}
+
+.vendor {
+    -webkit-transition: none;
+}
+
+$CamelVariable: 1px;
+
+@mixin CamelMixin {
+    color: #000000;
+}
+
+.double-slash-comment {
+    //missing space
+    color: #000000;
+}
+
+.dollar-empty-line {
+    $first: 1px;
+    $second: 2px;
+    width: $first + $second;
+}
+
+.zero-length {
+    margin: 0px;
+}
+
+.font-family {
+    font-family: Arial;
+}
+
+.legacy-color {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.legacy-media {
+    @media (min-width: 100px) {
+        color: #000000;
+    }
+}

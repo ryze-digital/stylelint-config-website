@@ -7,6 +7,10 @@
   "main": "index.js",
   "type": "module",
   "repository": "github:ryze-digital/stylelint-config-website",
+  "scripts": {
+    "lint": "stylelint --config index.js",
+    "test": "node test/snapshot.js"
+  },
   "keywords": [
     "stylelint",
     "stylelintconfig",
