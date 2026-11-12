@@ -19,9 +19,15 @@
     "scss"
   ],
   "peerDependencies": {
-    "stylelint": "^16.12.0"
+    "stylelint": "^18.0.0"
   },
   "dependencies": {
-    "stylelint-config-standard-scss": "^14.0.0"
+    "stylelint-config-standard-scss": "^18.0.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "engines": {
+    "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
   }
 }
